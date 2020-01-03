@@ -2,10 +2,18 @@
   "name": "receta",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://my2btc.com/webReceta",
   "dependencies": {
+    "firebase": "^6.0.2",
+    "re-base": "2.2.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-scripts": "3.0.1"
+    "react-lazyload": "^2.5.0",
+    "react-rebase": "^1.0.5",
+    "react-router": "^5.0.0",
+    "react-router-dom": "^5.0.0",
+    "react-scripts": "3.0.1",
+    "sfcookies": "^1.0.2"
   },
   "scripts": {
     "start": "react-scripts start",
