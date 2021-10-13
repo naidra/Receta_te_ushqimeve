@@ -4,9 +4,10 @@ import { NavLink } from 'react-router-dom';
 function Receta({ receta, loggedAs, deleteHandler, updateHandler, voteHandler }) {
     const butoniFshije = receta.autori === loggedAs ? <button onClick={() => deleteHandler(receta.unChangableName)} className="delete">&times;</button> : null;
     const butoniNdrysho = receta.autori === loggedAs ? <button onClick={() => updateHandler(receta)} className="update">✎</button> : null;
+    
     return (
         <li className="receta">
-            <img src={receta.fotoUrl} alt="foto" />
+            <NavLink to={`/receta/${receta.unChangableName}`}><img src={receta.fotoUrl} alt="foto" /></NavLink>
             <div className="textDiv">
                 <NavLink to={`/receta/${receta.unChangableName}`}>{receta.emri}</NavLink>
                 <p className="date">Postuar më: { receta.dataEPostimit }.</p>

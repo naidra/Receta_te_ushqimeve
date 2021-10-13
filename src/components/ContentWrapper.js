@@ -24,7 +24,7 @@ function ContentWrapper(props) {
                         <LazyLoad key={(Math.random() * 1000)} height={150} offset={100} once>
                             <Receta key={(Math.random() * 1000) + id}
                             receta={receta}
-                            loggedAs={userData.uName}
+                            loggedAs={userData.uName || userData.uEmail}
                             deleteHandler={fshijeReceten}
                             updateHandler={ndryshoReceten}
                             voteHandler={voteHandler}

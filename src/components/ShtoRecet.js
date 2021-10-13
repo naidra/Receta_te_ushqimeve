@@ -12,7 +12,7 @@ class ShtoRecet extends Component {
         dataSot.shift();
 
         const recetData = {
-            autori: this.props.userData.uName,
+            autori: this.props.userData.uName || this.props.userData.uEmail,
             emri: this.refs.emri.value,
             unChangableName: this.refs.emri.value,
             kategoria: this.refs.kategoria.value,

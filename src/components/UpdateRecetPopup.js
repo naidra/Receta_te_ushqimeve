@@ -9,7 +9,7 @@ class NdryshoRecet extends Component {
     handleSubmit(e) {
         e.preventDefault();
         const recetData = {
-            autori: this.props.userData.uName,
+            autori: this.props.userData.uName || this.props.userData.uEmail,
             emri: this.refs.emri.value,
             kategoria: this.refs.kategoria.value,
             perberja: this.refs.përmbajtja.value,

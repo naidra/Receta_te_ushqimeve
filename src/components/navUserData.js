@@ -10,7 +10,7 @@ function NavUserData(props) {
                 <button className="shtoRecet-btn" onClick={toggleShtoRecet}>Shto një recetë</button>
                 <div className="dropDownWrapper">
                     <input type="checkbox" id="forDrop" />
-                    <label htmlFor="forDrop">{userData.uName}</label>
+                    <label htmlFor="forDrop">{userData.uName || userData.uEmail}</label>
                     <ul className="dropDown">
                         <li>{ userData.uEmail }</li>
                         <li><small>Kyqur me:&nbsp;</small>{ userData.provider }</li>

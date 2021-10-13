@@ -20,6 +20,7 @@ code {
 pre {
   font-size: 16px;
   font-family: 'Nunito', sans-serif;
+  white-space: pre-line;
 }
 .App {
   display:flex;
@@ -356,6 +357,7 @@ footer {
   width:200px;
   height:150px;
   object-fit:cover;
+  display:block;
 }
 .recetaContainer .textDiv {
   padding:.8em;

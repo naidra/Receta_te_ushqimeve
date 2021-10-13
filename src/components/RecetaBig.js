@@ -21,8 +21,8 @@ function RecetaBig(props) {
                     <h2>{emri}</h2>
                 </div>
                 <div className="section secondSection">
-                    <p><b>Perberja:</b> <br/>{perberja}</p>
-                    <p><b>Pergatitja:</b> <br/>{pergatitja}</p>
+                    <p><b>Perberja:</b> <br/><pre>{perberja}</pre></p>
+                    <p><b>Pergatitja:</b> <br/><pre>{pergatitja}</pre></p>
                 </div>
                 <div className="section thirdSection">
                     <div className="catContainer">
