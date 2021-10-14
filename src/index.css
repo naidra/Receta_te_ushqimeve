@@ -337,7 +337,7 @@ footer {
 .recetaContainer .receta {
   display:flex;
   justify-content:flex-start;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
   width:100%;
   border-radius:4px;
   overflow:hidden;
